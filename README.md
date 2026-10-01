@@ -114,6 +114,9 @@ A model can be evaluated through:
 
 The benchmark also uses a Pareto-style comparison between accuracy and estimated CO₂ to visualize the trade-off.
 
+![GreenAI Pareto Comparison](figures/greenai_pareto_comparison.png)
+
+
 The findings are specific to this dataset, model configurations, and computing environment. They should not be interpreted as evidence that one model type is always more environmentally efficient than another.
 
 ## ⚠️ Limitations
