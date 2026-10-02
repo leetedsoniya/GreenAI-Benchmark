@@ -77,6 +77,8 @@ In this experiment, Random Forest required:
 - 200.2× higher inference time
 - 334.7× larger saved model file
 
+The CO₂ comparison is indicative rather than a direct measurement. The runs were short, and CodeCarbon estimates can be sensitive to hardware, runtime, and carbon-intensity assumptions.
+
 Its accuracy was 5.81 percentage points lower in the main benchmark.
 
 ## 🔬 Robustness Test
@@ -97,6 +99,8 @@ The mean training time was much higher for Random Forest in this separate timing
 ## 📈 Inference Scaling
 
 Inference time was tested with increasing workloads.
+
+The values below represent the **total inference time for the full batch**, not the time for a single prediction.
 
 | Samples | Logistic Regression (s) | Random Forest (s) | RF / LR |
 |---:|---:|---:|---:|
@@ -125,6 +129,7 @@ The findings are specific to this dataset, model configurations, and computing e
 - The benchmark uses one dataset and two model types.
 - Results depend on the model configurations and computing environment.
 - CO₂ values are estimates generated using CodeCarbon, not direct measurements.
+- The CO₂ runs were short, so the reported difference should be treated as indicative rather than a precise estimate of real-world emissions.
 - The experiment was performed in Google Colab.
 - CodeCarbon may use estimated/default hardware power and carbon-intensity values when complete runtime or geographic information is unavailable.
 - Water consumption was not measured by this experiment.
@@ -155,18 +160,13 @@ Possible extensions include:
 - TF-IDF
 - GitHub
 
-## 📁 Project Structure
+## ▶️ How to Run
 
-```text
-GreenAI-Benchmark/
-│
-├── GreenAI_Benchmark.ipynb
-├── results/
-├── figures/
-└── README.md
+### Requirements
 
-👩‍💻 Author
-Soniya Rajak
-B.Tech — Artificial Intelligence & Machine Learning
-Gyan Ganga College of Technology
+The project includes a `requirements.txt` file containing the required Python packages.
 
+Install the dependencies with:
+
+```bash
+pip install -r requirements.txt
