@@ -70,7 +70,7 @@ Used as the higher-compute ensemble model.
 | Inference Time / prediction | 0.000479 s | 0.095906 s |
 | Complexity | 5,001 parameters | 300 trees / 169,184 nodes |
 
-In this experiment, Random Forest required approximately:
+In this experiment, Random Forest required:
 
 - 8.9× more training time
 - 30.9× higher estimated CO₂
@@ -90,7 +90,9 @@ The models were also evaluated across five different train/test splits.
 
 Across these five splits, the mean accuracy difference was 3.43 percentage points.
 
-The mean training time measured in this separate timing experiment was approximately 110× higher for Random Forest.
+The timing values in this five-split experiment were measured separately from the main CodeCarbon-tracked benchmark, so they are not directly comparable to the main benchmark timings. Differences can arise from run conditions and measurement/tracking overhead.
+
+The mean training time was much higher for Random Forest in this separate timing experiment.
 
 ## 📈 Inference Scaling
 
@@ -115,7 +117,6 @@ A model can be evaluated through:
 The benchmark also uses a Pareto-style comparison between accuracy and estimated CO₂ to visualize the trade-off.
 
 ![GreenAI Pareto Comparison](figures/greenai_pareto_comparison.png)
-
 
 The findings are specific to this dataset, model configurations, and computing environment. They should not be interpreted as evidence that one model type is always more environmentally efficient than another.
 
@@ -163,10 +164,8 @@ GreenAI-Benchmark/
 ├── results/
 ├── figures/
 └── README.md
-## 👩‍💻 Author
 
-**Soniya Rajak**
-
+👩‍💻 Author
+Soniya Rajak
 B.Tech — Artificial Intelligence & Machine Learning
-
 Gyan Ganga College of Technology
