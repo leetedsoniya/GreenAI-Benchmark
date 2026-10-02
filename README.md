@@ -170,3 +170,48 @@ Install the dependencies with:
 
 ```bash
 pip install -r requirements.txt
+```
+
+The notebook was tested in Google Colab using Python 3.13.15.
+
+### Notebook
+
+Open:
+
+```text
+GreenAI_Benchmark.ipynb
+```
+
+Run the notebook cells in order from beginning to end.
+
+The notebook performs the data preparation, model training, evaluation, robustness testing, inference scaling, and result generation.
+
+## 📁 Project Structure
+
+```text
+GreenAI-Benchmark/
+│
+├── GreenAI_Benchmark.ipynb
+├── README.md
+├── requirements.txt
+├── figures/
+│   ├── .gitkeep
+│   └── greenai_pareto_comparison.png
+└── results/
+    ├── .gitkeep
+    ├── greenai_efficiency_indicators.csv
+    ├── greenai_experiment_results.csv
+    ├── greenai_final_metrics.csv
+    ├── greenai_inference_scaling.csv
+    ├── greenai_robustness_results.csv
+    ├── greenai_robustness_summary.csv
+    └── greenai_summary.csv
+```
+
+## 👩‍💻 Author
+
+**Soniya Rajak**
+
+B.Tech — Artificial Intelligence & Machine Learning
+
+Gyan Ganga College of Technology
